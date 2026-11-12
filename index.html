@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Feittosa Clips: projeto de criação e revisão de cortes de gameplay com inteligência artificial e aprovação humana.">
+  <title>Feittosa Clips | Melhores momentos do gameplay</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #090e1b;
+      color: #f6f7fd;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 3px solid #7fe9d7; outline-offset: 4px; }
+    .wrap { max-width: 1100px; margin: auto; padding: 0 24px; }
+    header {
+      background: #090e1bef; border-bottom: 1px solid #ffffff20;
+      padding: 20px 0; position: sticky; top: 0; z-index: 2;
+    }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .brand { font-size: 1.2rem; font-weight: 900; letter-spacing: -.04em; }
+    .brand span { color: #ff8294; }
+    .links { display: flex; gap: 22px; flex-wrap: wrap; font-size: .9rem; }
+    .links a:hover, footer a:hover { color: #7fe9d7; }
+    .hero {
+      padding: 110px 0;
+      background: radial-gradient(ellipse at 80% 20%, #783b6e66, transparent 55%),
+        radial-gradient(ellipse at 10% 80%, #14576b66, transparent 55%), #090e1b;
+    }
+    .tag {
+      display: inline-block; border: 1px solid #ffc19670;
+      color: #ffc196; padding: 7px 14px; border-radius: 30px;
+      font-size: .8rem; font-weight: 800; letter-spacing: .04em;
+    }
+    h1 { font-size: clamp(3rem, 7vw, 5.6rem); max-width: 900px; line-height: 1.07; letter-spacing: -.065em; margin: 24px 0; }
+    .gradient {
+      background: linear-gradient(100deg, #ff728f, #ffb77d);
+      background-clip: text; -webkit-background-clip: text; color: transparent;
+    }
+    .lead { max-width: 660px; font-size: 1.15rem; color: #c4ccdd; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 32px; }
+    .btn { display: inline-block; padding: 14px 21px; border-radius: 12px; font-weight: 800; }
+    .primary { background: linear-gradient(110deg, #ff718d, #ffb07e); color: #171728; }
+    .secondary { border: 1px solid #ffffff55; }
+    section { padding: 75px 0; border-top: 1px solid #ffffff15; }
+    .eyebrow { color: #7fe9d7; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; font-size: .78rem; }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2; letter-spacing: -.05em; }
+    .muted { color: #b3bfd2; }
+    .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 35px; }
+    .card {
+      padding: 22px; border-radius: 18px; background: #151e30;
+      border: 1px solid #354059;
+    }
+    .number { color: #ff9aa5; font-weight: 900; }
+    .card h3 { margin: 15px 0 8px; }
+    .card p { color: #bac5d6; font-size: .9rem; }
+    .highlight {
+      padding: 32px; border-radius: 20px;
+      background: linear-gradient(120deg, #292039, #182c34);
+      border: 1px solid #70607c;
+    }
+    .highlight strong { color: #92f3dd; }
+    footer { padding: 35px 0; border-top: 1px solid #ffffff24; color: #b0bbcf; font-size: .9rem; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 16px; }
+    @media(max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media(max-width: 540px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 75px 0; }
+      header { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Navegação principal">
+      <a class="brand" href="#inicio">FEITTOSA <span>CLIPS</span></a>
+      <div class="links">
+        <a href="#sobre">Sobre</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#aprovacao">Aprovação</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <div class="hero">
+      <div class="wrap">
+        <span class="tag">PROJETO EM DESENVOLVIMENTO</span>
+        <h1>Seus melhores momentos merecem <span class="gradient">virar história.</span></h1>
+        <p class="lead">
+          O Feittosa Clips é um projeto de automação inteligente para
+          identificar, editar e preparar os melhores momentos de
+          transmissões de gameplay, sempre com revisão humana.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#processo">Conhecer o projeto</a>
+          <a class="btn secondary" href="https://www.twitch.tv/rodrigofeittosa" target="_blank" rel="noopener noreferrer">Ver canal na Twitch</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="sobre">
+      <div class="wrap">
+        <p class="eyebrow">O projeto</p>
+        <h2>Da live ao corte, com inteligência.</h2>
+        <p class="muted">
+          A fábrica de cortes utiliza agentes especializados para
+          auxiliar na descoberta dos melhores momentos, produzir
+          vídeos verticais e avaliar sua qualidade.
+        </p>
+        <p class="muted">
+          O sistema está em desenvolvimento. Recursos de publicação
+          em plataformas externas ainda dependem de integração,
+          autorização e das permissões oficiais de cada plataforma.
+        </p>
+      </div>
+    </section>
+
+    <section id="processo">
+      <div class="wrap">
+        <p class="eyebrow">Fluxo de produção</p>
+        <h2>Cinco agentes. Um processo supervisionado.</h2>
+        <div class="grid">
+          <article class="card">
+            <span class="number">01</span>
+            <h3>Diretor</h3>
+            <p>Coordena o trabalho e supervisiona as etapas.</p>
+          </article>
+          <article class="card">
+            <span class="number">02</span>
+            <h3>Caçador</h3>
+            <p>Identifica momentos interessantes nas gravações.</p>
+          </article>
+          <article class="card">
+            <span class="number">03</span>
+            <h3>Editor</h3>
+            <p>Prepara vídeos verticais, enquadramento e legendas.</p>
+          </article>
+          <article class="card">
+            <span class="number">04</span>
+            <h3>Crítico</h3>
+            <p>Avalia qualidade, clareza e potencial do conteúdo.</p>
+          </article>
+          <article class="card">
+            <span class="number">05</span>
+            <h3>Publicador</h3>
+            <p>Prepara conteúdos para envio após autorização.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="aprovacao">
+      <div class="wrap">
+        <p class="eyebrow">Controle humano</p>
+        <div class="highlight">
+          <h2>Nenhum vídeo é publicado sem autorização.</h2>
+          <p>
+            O fluxo planejado exige aprovação do vídeo editado
+            e uma segunda aprovação do conteúdo final, incluindo
+            título, descrição e hashtags.
+          </p>
+          <p>
+            <strong>O criador mantém a decisão final.</strong>
+            A publicação direta não é realizada sem permissão
+            da plataforma e autorização explícita do responsável.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>Feittosa Clips</strong>
+      <p>Projeto independente de criação de cortes de gameplay.</p>
+      <p>Não é um produto oficial ou afiliado ao TikTok ou à Twitch.</p>
+      <div class="footer-links">
+        <a href="https://www.twitch.tv/rodrigofeittosa" target="_blank" rel="noopener noreferrer">Canal na Twitch</a>
+      </div>
+      <p>© 2026 Feittosa Clips.</p>
+    </div>
+  </footer>
+</body>
+</html>
